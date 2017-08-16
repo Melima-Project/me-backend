@@ -1,6 +1,11 @@
-# me-core
+<p align="center">
+    <img src="https://avatars2.githubusercontent.com/u/29970755?v=4&s=140">
+</p>
+<p align="center"><sup><strong>Open-source ordering system. Our <a href="https://melima.hda.me/">Homepage</a> | <a href="https://twitter.com/Melima_Project">Twitter</a> | <a href="https://www.reddit.com/r/melima/">Reddit</a> | <a href="https://melima.slack.com/">Slack</a> | <a href="https://steemit.com/@melima">Steemit</a></strong></sup></p>
 
-**Melima Project Backend**
+## me-core
+
+**Melima Core**
 
 Melima backend based on [LoopBack framework](https://github.com/strongloop/loopback).
 
@@ -12,10 +17,9 @@ Current melima core version configured for [PostgresSQL](https://www.postgresql.
 
 Node.js, PostgresSQL (or another LoopBack supported database)
 
-Recommended Node.js and PostgresSQL repositories:
-
-https://github.com/nodesource/distributions
-https://www.postgresql.org/download/linux/ubuntu/
+Recommended Node.js and PostgresSQL repositories:  
+https://github.com/nodesource/distributions  
+https://www.postgresql.org/download/linux/ubuntu/  
 https://www.postgresql.org/download/linux/redhat/
 
 #### Optional
