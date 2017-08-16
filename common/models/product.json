@@ -1,0 +1,66 @@
+{
+  "name": "Product",
+  "plural": "pd",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Price": {
+      "type": "number",
+      "required": true
+    },
+    "CountAvailable": {
+      "type": "number"
+    },
+    "DiscountPercent": {
+      "type": "number",
+      "default": 1,
+      "postgresql": {
+        "dataType": "NUMERIC(10,2)"
+      }
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "SerialNumber": {
+      "type": "string",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "Product",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "Order",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "Product",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,12 @@
+{
+  "postgresql": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "restaurant",
+    "password": "2GCadoCs9tsTVfYV",
+    "name": "postgresql",
+    "user": "restaurantuser",
+    "connector": "postgresql"
+  }
+}

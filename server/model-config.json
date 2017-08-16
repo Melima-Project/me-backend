@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "postgresql",
+    "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "create"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ]
+  },
+  "AccessToken": {
+    "dataSource": "postgresql",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "postgresql",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "postgresql",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "postgresql",
+    "public": false
+  },
+  "Product": {
+    "dataSource": "postgresql",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "postgresql",
+    "public": true
+  }
+}
