@@ -29,7 +29,7 @@
       "type": "number",
       "default": 0,
       "postgresql": {
-        "dataType": "BIGINT"
+        "dataType": "bigint"
       }
     },
     "SpecialWishes": {

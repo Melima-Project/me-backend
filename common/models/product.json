@@ -13,7 +13,13 @@
     },
     "Price": {
       "type": "number",
-      "required": true
+      "required": true,
+      "precision": 72,
+      "postgresql": {
+        "dataType": "numeric",
+        "dataPrecision": 72,
+        "dataScale": 18
+       }
     },
     "CountAvailable": {
       "type": "number"
@@ -21,9 +27,13 @@
     "DiscountPercent": {
       "type": "number",
       "default": 1,
+      "precision": 3,
+      "scale": 2,
       "postgresql": {
-        "dataType": "NUMERIC(10,2)"
-      }
+        "dataType": "numeric",
+        "dataPrecision": 3,
+        "dataScale": 2
+       }
     },
     "Description": {
       "type": "string",

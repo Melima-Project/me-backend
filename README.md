@@ -11,7 +11,7 @@ Using LoopBack helps us create fast and efficient API and removes various DBs in
 
 Current melima core version configured for [PostgresSQL](https://www.postgresql.org/), but thanks to LoopBack you can [connect any popular database](http://loopback.io/doc/en/lb3/Database-connectors.html).
 
-### Prerequirements
+## Prerequirements
 
 Node.js, PostgresSQL (or another LoopBack supported database)
 
@@ -20,7 +20,7 @@ https://github.com/nodesource/distributions
 https://www.postgresql.org/download/linux/ubuntu/  
 https://www.postgresql.org/download/linux/redhat/
 
-#### Optional
+### Optional
 
 [Change npm's default directory to a local one](https://stackoverflow.com/a/39373730)
 
